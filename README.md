@@ -10,11 +10,25 @@ Automação para coleta de dados de Estimativas de População publicadas no Di�
 - Google Chrome instalado
 - ChromeDriver compatível com a versão do seu Chrome
 
-### Instalando as dependências
+### Criando o ambiente virtual e instalando as dependências
+
+Antes de rodar o projeto, é recomendado criar um ambiente virtual (venv) para isolar as dependências e evitar conflitos com outros projetos Python na sua máquina.
 
 ```bash
+# Cria o ambiente virtual
+python -m venv .venv
+
+# Ativa o ambiente virtual
+# Windows:
+.venv\Scripts\activate
+# Linux/Mac:
+source .venv/bin/activate
+
+# Instala as dependências dentro da venv
 pip install -r requirements.txt
 ```
+
+Com a venv ativada, todas as bibliotecas serão instaladas de forma isolada. Lembre de sempre ativá-la antes de rodar o script.
 
 ### Verificando a versão do Chrome
 
@@ -86,4 +100,4 @@ Descomente a linha abaixo dentro da função `criar_driver()` no arquivo `IBGE.p
 
 ## Contexto
 
-Este projeto foi desenvolvido como parte de um trabalho acadêmico sobre automação de coleta de dados públicos. Os dados de população municipal publicados no DOU pelo IBGE podem ser utilizados em análises de mercado. por exemplo, no setor de turismo, onde a densidade populacional por estado indica concentração de potenciais clientes e influencia a criação de pacotes e estratégias de precificação.
+Este projeto foi desenvolvido como parte de um trabalho acadêmico sobre automação de coleta de dados públicos. Os dados de população municipal publicados no DOU pelo IBGE podem ser utilizados em análises de mercado — por exemplo, no setor de turismo, onde a densidade populacional por estado indica concentração de potenciais clientes e influencia a criação de pacotes e estratégias de precificação.
